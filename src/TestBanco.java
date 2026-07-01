@@ -23,7 +23,7 @@ public class TestBanco {
         cuentaMaria.mostrarInfo();
 
         System.out.println("---- Operaciones ----");
-¿
+
         // Depositar
         cuentaAna.depositar(10000.0);
 
