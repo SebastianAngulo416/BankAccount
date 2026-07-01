@@ -23,17 +23,14 @@ public class TestBanco {
         cuentaMaria.mostrarInfo();
 
         System.out.println("---- Operaciones ----");
-
-        System.out.println("Ana Perez deposita $10.000:");
+¿
+        // Depositar
         cuentaAna.depositar(10000.0);
 
-        System.out.println("\nLuis Gomez retira $25.000:");
         cuentaLuis.retirar(25000.0);
 
-        System.out.println("\nTech Solutions retira $10.000:");
         cuentaTech.retirar(10000.0);
 
-        System.out.println("\nMaria Lopez intenta retirar $20.000:");
         cuentaMaria.retirar(20000.0);
         System.out.println();
 
@@ -57,11 +54,11 @@ public class TestBanco {
 
 
         int totalCuentas = 4;
-        // se suma los saldos usando los Getters
+        // se suma los saldos usando los Getters para traer el saldo
         double saldoTotal = cuentaAna.getSaldo() + cuentaLuis.getSaldo() + cuentaTech.getSaldo() + cuentaMaria.getSaldo();
         double promedioSaldo = saldoTotal / totalCuentas;
 
-        // buscar cual es la cuenta con mayor saldo, y la comparamops de forma manual o una por una
+        // buscar cual es la cuenta con mayor saldo, y la comparamos de forma manual, una por una.
         CuentaBancaria cuentaMayor = cuentaAna;
 
         if (cuentaLuis.getSaldo() > cuentaMayor.getSaldo()) {
@@ -82,13 +79,6 @@ public class TestBanco {
         System.out.println("Número de cuenta: " + cuentaMayor.getNumeroCuenta());
         System.out.println("Titular: " + cuentaMayor.getTitular());
         System.out.printf("Saldo: $%.2f%n", cuentaMayor.getSaldo());
-
-
-
-
-
-
-
 
     }
 }

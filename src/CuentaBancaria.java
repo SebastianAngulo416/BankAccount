@@ -6,14 +6,14 @@ public class CuentaBancaria {
 
     public CuentaBancaria(String numeroCuenta, String titular, double saldoInicial, double tasaInteres) {
         if (saldoInicial < 0) {
-            System.out.println("ERROR: El saldo inicial no puede ser negativo.");
+            System.out.println("ERROR: El saldo inicial no puede ser negativo");
             this.saldo = 0;
         } else {
             this.saldo = saldoInicial;
         }
 
         if (tasaInteres < 0) {
-            System.out.println("ERROR: La tasa de interés no puede ser negativa.");
+            System.out.println("ERROR: La tasa de interés no puede ser negativa");
             this.tasaInteres = 0;
         } else {
             this.tasaInteres = tasaInteres;
@@ -44,7 +44,7 @@ public class CuentaBancaria {
             this.saldo += monto;
             System.out.printf("Depósito exitoso de $%.2f. Nuevo saldo: $%.2f%n", monto, this.saldo);
         } else {
-            System.out.println("ERROR: El monto a depositar debe ser positivo.");
+            System.out.println("ERROR: El monto a depositar debe ser positivo");
         }
     }
 

@@ -40,7 +40,7 @@ public class CuentaCorriente extends CuentaBancaria {
             System.out.printf("Nuevo saldo: $%.2f%n", this.saldo);
 
         } else {
-            System.out.println("ERROR: Operación rechazada. El monto supera el límite de sobregiro permitido.");
+            System.out.println("ERROR: Operación rechazada. El monto supera el límite de sobregiro permitido");
         }
     }
 

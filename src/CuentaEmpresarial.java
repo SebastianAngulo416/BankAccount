@@ -21,7 +21,7 @@ public class CuentaEmpresarial extends CuentaBancaria {
         if (costoTotal <= this.saldo) {
             this.saldo -= monto;
             this.saldo -= comisionRetiro;
-            System.out.println("Retiro exitoso de la Empresa.");
+            System.out.println("Retiro exitoso de la Empresa");
             System.out.printf("Comisión por retiro cobrada: $%.2f%n", comisionRetiro);
             System.out.printf("Nuevo saldo: $%.2f%n", this.saldo);
         } else {
